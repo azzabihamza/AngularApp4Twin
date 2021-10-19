@@ -12,6 +12,7 @@ import { MainProviderComponent } from './main-provider/main-provider.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { HomeComponent } from './home/home.component';
 import { MainUserComponent } from './main-user/main-user.component';
+import { AddProductTDComponent } from './add-product-td/add-product-td.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MainUserComponent } from './main-user/main-user.component';
     MainProviderComponent,
     NotFoundPageComponent,
     HomeComponent,
-    MainUserComponent
+    MainUserComponent,
+    AddProductTDComponent
   ],
   imports: [
     BrowserModule,
