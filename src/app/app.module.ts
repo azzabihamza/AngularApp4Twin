@@ -13,6 +13,10 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { HomeComponent } from './home/home.component';
 import { MainUserComponent } from './main-user/main-user.component';
 import { AddProductTDComponent } from './add-product-td/add-product-td.component';
+import { AddProductRFComponent } from './add-product-rf/add-product-rf.component';
+import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
+import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
+import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { AddProductTDComponent } from './add-product-td/add-product-td.component
     NotFoundPageComponent,
     HomeComponent,
     MainUserComponent,
-    AddProductTDComponent
+    AddProductTDComponent,
+    AddProductRFComponent,
+    AddInvoiceComponent,
+    EditInvoiceComponent,
+    ListInvoiceComponent
   ],
   imports: [
     BrowserModule,
