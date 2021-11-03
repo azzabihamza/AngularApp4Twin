@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListuserComponent } from './listuser/listuser.component';
 import { HeaderComponent } from './header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { MainProductComponent } from './main-product/main-product.component';
 import { MainProviderComponent } from './main-provider/main-provider.component';
@@ -17,6 +17,7 @@ import { AddProductRFComponent } from './add-product-rf/add-product-rf.component
 import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
 import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
 import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
+import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +34,14 @@ import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
     AddProductRFComponent,
     AddInvoiceComponent,
     EditInvoiceComponent,
-    ListInvoiceComponent
+    ListInvoiceComponent,
+    MainInvoiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,19 +9,27 @@ import { Invoice } from '../models/Invoice';
 export class ListInvoiceComponent implements OnInit {
 
   invoices : Invoice[];
-  
+  public show:boolean = false;
+  invoice : Invoice;
 
   constructor() { }
 
   ngOnInit(): void {
     this.invoices =[
       { idInvoice: 1, discountAmount: 20, billAmount: 500, dateBill:
-        new Date ("14/07/2021") , Status : true},
+        new Date ("14/07/2020") , Status : true},
       { idInvoice: 2, discountAmount: 10, billAmount: 1000,dateBill:
         new Date ("02/10/2020") , Status : false},
       { idInvoice: 3, discountAmount: 50, billAmount: 200, dateBill:
-        new Date ("15/12/2021") , Status : false},
+        new Date ("15/12/2020") , Status : false},
       ]
+  }
+
+  
+
+  showEdit(i: Invoice){
+    this.show = true;
+    this.invoice = i;
   }
 
 }

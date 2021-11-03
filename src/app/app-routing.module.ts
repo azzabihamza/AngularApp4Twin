@@ -6,6 +6,7 @@ import { MainProductComponent } from './main-product/main-product.component';
 import { MainProviderComponent } from './main-provider/main-provider.component';
 import { MainUserComponent } from './main-user/main-user.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
 
 const routes: Routes = [
   {path:"home", component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   ]},
   {path:"mainproduct", component: MainProductComponent},
   {path:"mainprovider", component: MainProviderComponent},
+  {path:"maininvoice", component: MainInvoiceComponent},
   {path:"**", component: NotFoundPageComponent},
 ];
 
