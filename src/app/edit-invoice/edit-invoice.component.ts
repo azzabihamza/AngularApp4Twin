@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Invoice } from '../models/Invoice';
 
@@ -10,6 +10,7 @@ import { Invoice } from '../models/Invoice';
 export class EditInvoiceComponent implements OnInit {
   myFormEdit : FormGroup;
   @Input() invoiceToEdit : Invoice;
+  @Output() edited = new EventEmitter<Invoice>();
   constructor() { }
 
   ngOnInit(): void {
@@ -30,6 +31,12 @@ export class EditInvoiceComponent implements OnInit {
         this.myFormEdit.setControl('dateBill', new FormControl(this.invoiceToEdit.dateBill));
         this.myFormEdit.setControl('status', new FormControl(this.invoiceToEdit.Status));
     }
+  }
+
+  onEdit(){
+    console.log(this.myFormEdit.getRawValue());
+    this.edited.emit(this.myFormEdit.getRawValue());
+    this.myFormEdit.reset();
   }
 
 }

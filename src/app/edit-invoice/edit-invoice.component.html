@@ -1,25 +1,25 @@
-<form [formGroup]="myFormEdit">
+<form [formGroup]="myFormEdit" (submit)="onEdit()">
     <div class="form-group">
         <label>Id invoice</label>
         <input type="text" class="form-control" formControlName="idInvoice">
-    </div> 
+    </div>
     <div class="form-group">
         <label>Discount account</label>
         <input type="text" class="form-control" formControlName="discountAccount">
-    </div> 
+    </div>
     <div class="form-group">
         <label>Bill</label>
         <input type="text" class="form-control" formControlName="bill">
-    </div> 
+    </div>
     <div class="form-group">
         <label>Date bill</label>
         <input type="text" class="form-control" formControlName="dateBill">
-    </div> 
+    </div>
     <div class="form-group">
         <label>Status</label>
         <input type="text" class="form-control" formControlName="status">
-    </div> 
-    
-    
-           
+    </div>
+
+    <button class="btn btn-primary" type="submit" >edit</button>
+
 </form>
