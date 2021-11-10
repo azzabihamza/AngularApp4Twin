@@ -28,7 +28,7 @@ export class ListuserComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => console.log(params.get('cat')));
 
-    this.list = this.userService.getUsers();
+    this.userService.getUsersFromApi().subscribe((users) => (this.list = users));
 
     this.listInitiale=this.list;
      this.route.paramMap.subscribe(
