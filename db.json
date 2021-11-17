@@ -1,5 +1,5 @@
 {
-  "users":[
+  "users": [
     {
       "idCustomer": 1,
       "firstName": "Mila",
@@ -20,27 +20,49 @@
       "email": "mila@kunis.com"
     },
     {
-        "idCustomer": 3,
-        "firstName": "George",
-        "lastName": "Clooney",
-        "birthDate": "1999-06-30",
-        "accountCategory": "Customer",
-        "email": "marlon@brando.com",
-        "password": "test",
-        "picture": "https://bootdey.com/img/Content/avatar/avatar2.png",
-        "profession": "Software Engineer"
+      "idCustomer": 3,
+      "firstName": "George",
+      "lastName": "Clooney",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Customer",
+      "email": "marlon@brando.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "profession": "Software Engineer"
     },
     {
-        "idCustomer": 4,
-        "firstName": "George",
-        "lastName": "Clooney",
-        "birthDate": "1999-06-30",
-        "accountCategory": "Customer",
-        "email": "marlon@brando.com",
-        "password": "test",
-        "picture": "https://bootdey.com/img/Content/avatar/avatar1.png",
-        "profession": "Software Engineer"
+      "idCustomer": 4,
+      "firstName": "George",
+      "lastName": "Clooney",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Customer",
+      "email": "marlon@brando.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar1.png",
+      "profession": "Software Engineer"
     }
-
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "code": "ab",
+      "libelle": "test1",
+      "prixUnitaire": 500,
+      "tauxTVA": 5
+    },
+    {
+      "id": 2,
+      "code": "cd",
+      "libelle": "test2",
+      "prixUnitaire": 100,
+      "tauxTVA": 3
+    },
+    {
+      "id": 3,
+      "code": "ef",
+      "libelle": "test3",
+      "prixUnitaire": 200,
+      "tauxTVA": 20
+    }
   ]
 }

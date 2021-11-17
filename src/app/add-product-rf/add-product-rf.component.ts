@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Component, OnInit, Input, SimpleChanges, Output, EventEmitter } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Product } from '../models/Product';
 
 @Component({
   selector: 'app-add-product-rf',
@@ -7,13 +8,18 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./add-product-rf.component.css']
 })
 export class AddProductRFComponent implements OnInit {
-  /*productForm = this.formBuilder.group({
-
-  })*/
-
+  productForm: FormGroup;
+  product: Product;
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.productForm = new FormGroup({
+      idProduct: new FormControl(),
+      code: new FormControl(),
+      libelle: new FormControl(),
+      price:  new FormControl(),
+      tauxTVA: new FormControl(),
+    })
   }
 
 }

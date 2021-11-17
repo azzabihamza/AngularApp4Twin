@@ -1,3 +1,28 @@
 <div class="container">
-    <app-add-product-td></app-add-product-td>
+    
+    <app-add-product-rf></app-add-product-rf>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>TVA</th>
+
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.idProduit}}</td>
+                <td>{{product.libelle}}</td>
+                <td>{{product.prixUnitaire}}</td>
+                <td>{{product.tauxTVA}}</td>
+                <td>
+                   <!-- <button class="btn btn-primary" (click)="editProduct(product)">Edit</button> -->
+                    <button class="btn btn-danger" (click)="deleteProduct(product.idProduit)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
